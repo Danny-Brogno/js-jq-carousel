@@ -36,9 +36,27 @@ function nextClick() {
   }
 }
 
+
+
 function init () {
-  $(".right-arrow").click(nextClick);
+  $(".right-arrow").click(nextClick, scottishMusic);
   $(".left-arrow").click(previousClick);
 }
 
 $(document).ready(init);
+
+
+function scottishMusic(){
+
+  $('document').ready(function () {
+
+    $('.right-arrow').click(function () {
+
+        var audio = {};
+        audio["walk"] = new Audio();
+        audio["walk"].src = "http://www.rangde.org/static/bell-ring-01.mp3"
+        audio["walk"].addEventListener('load', function () {
+          audio["walk"].play();
+        })
+  })
+});
