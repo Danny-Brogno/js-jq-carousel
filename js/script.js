@@ -35,28 +35,44 @@ function nextClick() {
     nextImg.addClass("active");
   }
 }
-
-
+// ----------------BONUS---------------------------------------
+// 
+//
+// function playPauseFun() {
+//
+//   var audio = document.getElementById("scot-music");
+//   var playPause = document.getElementById("playPauseBTN");
+//   var count = 0;
+//
+//   if( count == 0) {
+//     count = 1;
+//     audio.play();
+//     playPauseBTN.innerHTML = "Pause &#9658";
+//   } else {
+//     count = 0;
+//     audio.pause();
+//     playPauseBTN.innerHTML = "Play &#9658";
+//   }
+// }
+//
+// function stopFun() {
+//
+//   var audio = document.getElementById("audio");
+//   var playPause = document.getElementById("playPauseBTN");
+//   var count = 0;
+//
+//   playPauseFun();
+//   audio.playPauseFun();
+//   audio.currentTime = 0;
+//   playPauseBTN.innerHTML = "Play &#9658";
+// }
+// --------------END BONUS-----------------------------------------
 
 function init () {
-  $(".right-arrow").click(nextClick, scottishMusic);
+  $(".right-arrow").click(nextClick);
   $(".left-arrow").click(previousClick);
+  // $("#playPauseBTN").click(playPauseFun);
+  // $("#stop-music").click(stopFun);
 }
 
 $(document).ready(init);
-
-
-function scottishMusic(){
-
-  $('document').ready(function () {
-
-    $('.right-arrow').click(function () {
-
-        var audio = {};
-        audio["walk"] = new Audio();
-        audio["walk"].src = "http://www.rangde.org/static/bell-ring-01.mp3"
-        audio["walk"].addEventListener('load', function () {
-          audio["walk"].play();
-        })
-  })
-});
