@@ -7,6 +7,7 @@
 a {
   list-style: none;
   font-size: 50px;
+  color: white;
 }
 
 body {
@@ -24,21 +25,28 @@ main {
   line-height: 100vh;
 }
 
+.left-arrow .fa-chevron-left {
+  padding-right: 50px;
+}
+
+.right-arrow .fa-chevron-right {
+  padding-left: 50px;
+}
+
 .photos {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-flow: column wrap;
 }
 
 .photos img {
-  width: 500px;
+  width: 100%;
   height: 500px;
   border-radius: 10px;
+  display: none;
 }
 
-#pic2,
-#pic3,
-#pic4 {
-  display: none;
+
+img .active {
+  display: inline-block;
 }
