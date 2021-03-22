@@ -46,10 +46,7 @@ main {
   border-radius: 10px;
 }
 
-
-#pic2,
-#pic3,
-#pic4 {
+.picture {
   display: none;
 }
 
