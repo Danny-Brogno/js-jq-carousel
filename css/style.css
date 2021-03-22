@@ -40,13 +40,10 @@ main {
   flex-flow: column wrap;
 }
 
-.photos img {
-  width: 100%;
+.picture {
+  width: 800px;
   height: 500px;
   border-radius: 10px;
-}
-
-.picture {
   display: none;
 }
 
