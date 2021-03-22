@@ -39,13 +39,13 @@ button {
   border: 0px;
 }
 
-#play-pause {
+#playPauseBTN {
   position: absolute;
   left: 570px;
   top: 30px;
 }
 
-#stop-music {
+#stopMusicButton {
   position: absolute;
   right: 570px;
   top: 30px;

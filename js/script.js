@@ -15,7 +15,6 @@ function previousClick() {
     currentImg.removeClass("active");
     previousImg.addClass("active");
   }
-
 }
 
 function nextClick() {
@@ -36,43 +35,36 @@ function nextClick() {
   }
 }
 // ----------------BONUS---------------------------------------
-// 
+// var audio = document.getElementById("audio");
+// var playPause = document.getElementById("playPauseBTN");
+// var count = 0;
 //
 // function playPauseFun() {
-//
-//   var audio = document.getElementById("scot-music");
-//   var playPause = document.getElementById("playPauseBTN");
-//   var count = 0;
 //
 //   if( count == 0) {
 //     count = 1;
 //     audio.play();
-//     playPauseBTN.innerHTML = "Pause &#9658";
+//     playPause.innerHTML = "Pause &#9658";
 //   } else {
 //     count = 0;
 //     audio.pause();
-//     playPauseBTN.innerHTML = "Play &#9658";
+//     playPause.innerHTML = "Play &#9658";
 //   }
 // }
 //
 // function stopFun() {
 //
-//   var audio = document.getElementById("audio");
-//   var playPause = document.getElementById("playPauseBTN");
-//   var count = 0;
-//
 //   playPauseFun();
 //   audio.playPauseFun();
 //   audio.currentTime = 0;
-//   playPauseBTN.innerHTML = "Play &#9658";
+//   stop.innerHTML = "Play &#9658";
 // }
+
 // --------------END BONUS-----------------------------------------
 
 function init () {
   $(".right-arrow").click(nextClick);
   $(".left-arrow").click(previousClick);
-  // $("#playPauseBTN").click(playPauseFun);
-  // $("#stop-music").click(stopFun);
 }
 
 $(document).ready(init);
