@@ -26,7 +26,7 @@ header {
 
 button {
   height: 50px;
-  padding: 10px 25px 10px 25px;
+  padding: 15px 40px 15px 40px;
   background-image: url(../img/tartan1.png);
   background-repeat: no-repeat;
   background-size: cover;
@@ -39,17 +39,17 @@ button {
   border: 0px;
 }
 
-/* #playPauseBTN {
+#playPauseBTN {
   position: absolute;
-  left: 570px;
-  top: 30px;
+  left: 750px;
+  top: 35px;
 }
 
-#stopMusicButton {
+#stopMusicBTN {
   position: absolute;
-  right: 570px;
-  top: 30px;
-} */
+  right: 750px;
+  top: 35px;
+}
 
 /* -----------------------MAIN------------------------------------- */
 

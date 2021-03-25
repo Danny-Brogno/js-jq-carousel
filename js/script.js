@@ -45,10 +45,10 @@ function playPauseFun() {
 
   if(audio.paused ) {
     audio.play();
-    playPause.innerHTML = "Pause &#9658";
+    playPauseBTN.innerHTML = "Pause &#9658";
   } else {
     audio.pause();
-    playPause.innerHTML = "Play &#9658";
+    playPauseBTN.innerHTML = "Play &#9658";
   }
 }
 
@@ -56,7 +56,7 @@ function stopFun() {
   audio.pause();
   audio.currentTime = 0;
   stop.innerHTML = "Stop &#9658";
-  playPause.innerHTML = "Stop &#9658";
+  playPauseBTN.innerHTML = "Stop &#9658";
 
 }
 
