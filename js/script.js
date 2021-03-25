@@ -35,36 +35,38 @@ function nextClick() {
   }
 }
 // ----------------BONUS---------------------------------------
-// var audio = document.getElementById("audio");
-// var playPause = document.getElementById("playPauseBTN");
-// var count = 0;
-//
-// function playPauseFun() {
-//
-//   if( count == 0) {
-//     count = 1;
-//     audio.play();
-//     playPause.innerHTML = "Pause &#9658";
-//   } else {
-//     count = 0;
-//     audio.pause();
-//     playPause.innerHTML = "Play &#9658";
-//   }
-// }
-//
-// function stopFun() {
-//
-//   playPauseFun();
-//   audio.playPauseFun();
-//   audio.currentTime = 0;
-//   stop.innerHTML = "Play &#9658";
-// }
+
+
+function playPauseFun() {
+
+  var audio = document.getElementById("audio");
+  var playPause = document.getElementById("playPauseBTN");
+  var stop = document.getElementById("stopMusicBTN");
+
+  if(audio.paused ) {
+    audio.play();
+    playPause.innerHTML = "Pause &#9658";
+  } else {
+    audio.pause();
+    playPause.innerHTML = "Play &#9658";
+  }
+}
+
+function stopFun() {
+  audio.pause();
+  audio.currentTime = 0;
+  stop.innerHTML = "Stop &#9658";
+  playPause.innerHTML = "Stop &#9658";
+
+}
 
 // --------------END BONUS-----------------------------------------
 
 function init () {
   $(".right-arrow").click(nextClick);
   $(".left-arrow").click(previousClick);
+  $("#playPauseBTN").click(playPauseFun);
+  $("#stopMusicBTN").click(stopFun);
 }
 
 $(document).ready(init);
